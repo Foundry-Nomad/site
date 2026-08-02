@@ -27,8 +27,8 @@ export const LaunchFilm = () => {
     <AbsoluteFill
       name="Financial launch scene"
       style={{
-        backgroundColor: "#120f0d",
-        color: "#fff4e8",
+        background: "linear-gradient(118deg, #f8f7f3 0%, #e1e2e0 34%, #f5f1e8 58%, #d7d9d8 100%)",
+        color: "#25282a",
         fontFamily: 'Arial, "PingFang SC", "Microsoft YaHei", sans-serif',
         overflow: "hidden",
       }}
@@ -42,7 +42,7 @@ export const LaunchFilm = () => {
           left: 800,
           top: -500,
           borderRadius: 999,
-          background: "radial-gradient(circle, rgba(255,171,46,0.2) 0%, rgba(198,63,31,0.08) 38%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(214,183,122,0.26) 0%, rgba(139,151,157,0.1) 40%, transparent 70%)",
           scale: interpolate(loopFrame, [0, 75, 149], [0.95, 1.08, 0.95], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
@@ -77,13 +77,13 @@ export const LaunchFilm = () => {
       <svg className="market-line" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">
         <defs>
           <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#ff612f" stopOpacity="0" />
-            <stop offset="0.35" stopColor="#ff7a32" stopOpacity="0.28" />
-            <stop offset="1" stopColor="#ffba26" stopOpacity="0.95" />
+            <stop offset="0" stopColor="#8b9294" stopOpacity="0" />
+            <stop offset="0.35" stopColor="#a99b7d" stopOpacity="0.3" />
+            <stop offset="1" stopColor="#a98545" stopOpacity="0.92" />
           </linearGradient>
           <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#ff9b2f" stopOpacity="0.13" />
-            <stop offset="1" stopColor="#ff612f" stopOpacity="0" />
+            <stop offset="0" stopColor="#c7ad77" stopOpacity="0.15" />
+            <stop offset="1" stopColor="#9da3a5" stopOpacity="0" />
           </linearGradient>
           <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
         </defs>
@@ -101,7 +101,7 @@ export const LaunchFilm = () => {
           cx={interpolate(loopFrame, [0, 30, 60, 90, 120, 149], [280, 540, 790, 1060, 1320, 1570])}
           cy={interpolate(loopFrame, [0, 30, 60, 90, 120, 149], [790, 752, 705, 652, 585, 520])}
           r="8"
-          fill="#ffbd2e"
+          fill="#af8844"
           filter="url(#glow)"
         />
       </svg>
