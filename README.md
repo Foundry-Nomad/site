@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Foundry Nomad
+
+A single-page launch site built with Next.js and Remotion.
+
+## Google Tag Manager
+
+Set `NEXT_PUBLIC_GTM_ID` to your GTM container ID (for example, `GTM-XXXXXXX`). GTM is loaded on every route only when the value has a valid `GTM-` prefix.
+
+For local development, copy `.env.example` to `.env.local` and add the ID. In Vercel or Cloudflare, add `NEXT_PUBLIC_GTM_ID` as a build-time environment variable, then rebuild and redeploy the site. Because this project uses a static export, changing the variable requires a new build.
 
 ## Getting Started
 
@@ -16,7 +24,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
