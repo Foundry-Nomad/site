@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Foundry Nomad — 即将上线",
   description: "新一代金融科技体验正在启航。业务即将上线，敬请期待。",
+  icons: {
+    icon: [{ url: "/logo_128.png", type: "image/png", sizes: "128x128" }],
+    shortcut: "/logo_128.png",
+  },
 };
 
 export default function RootLayout({
