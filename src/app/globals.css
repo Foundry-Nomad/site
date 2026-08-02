@@ -3,7 +3,7 @@
 :root { --ink: #e7e6e1; --acid: #a98545; --flare: #8d9699; --paper: #25282a; }
 * { box-sizing: border-box; }
 html, body { width: 100%; height: 100%; margin: 0; background: var(--ink); overflow: hidden; }
-body { color: var(--paper); font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+body { color: var(--paper); font-family: Arial, Helvetica, sans-serif; }
 .launch-page { width: 100vw; height: 100svh; background: linear-gradient(118deg, #f8f7f3, #d8dada); overflow: hidden; }
 .launch-player { width: 100% !important; height: 100% !important; }
 .finance-grid { position: absolute; inset: 0; opacity: .22; background-image: repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(255,255,255,.2) 4px), linear-gradient(rgba(74,82,85,.11) 1px, transparent 1px), linear-gradient(90deg, rgba(74,82,85,.11) 1px, transparent 1px); background-size: 100% 4px, 96px 96px, 96px 96px; mask-image: linear-gradient(to bottom, rgba(0,0,0,.18), #000 72%); }
@@ -43,8 +43,8 @@ body { color: var(--paper); font-family: Arial, "PingFang SC", "Microsoft YaHei"
 @media (max-aspect-ratio: 4/3) {
   .launch-player { width: 178vh !important; height: 100vh !important; position: relative; left: 0; }
   .topbar { left: 50px; }
-  .hero-copy { left: 90px; }
-  .hero-copy h1 { font-size: 80px; letter-spacing: -.06em; }
-  .hero-copy p { font-size: 22px; }
+  .hero-copy { left: 40px; }
+  .hero-copy h1 { font-size: 64px; letter-spacing: -.055em; }
+  .hero-copy p { max-width: 560px; font-size: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { .launch-player { opacity: .99; } }

@@ -29,7 +29,7 @@ export const LaunchFilm = () => {
       style={{
         background: "linear-gradient(118deg, #f8f7f3 0%, #e1e2e0 34%, #f5f1e8 58%, #d7d9d8 100%)",
         color: "#25282a",
-        fontFamily: 'Arial, "PingFang SC", "Microsoft YaHei", sans-serif',
+        fontFamily: "Arial, Helvetica, sans-serif",
         overflow: "hidden",
       }}
     >
@@ -122,8 +122,8 @@ export const LaunchFilm = () => {
         }}
       >
         <div className="eyebrow"><span>PRIVATE ACCESS</span><span className="eyebrow-rule" /></div>
-        <h1>下一程，<br /><em style={{ backgroundPosition: `${interpolate(loopFrame, [0, 149], [-80, 180])}% 50%` }}>即将启航。</em></h1>
-        <p>我们正在构建新一代金融科技体验。<br />业务即将上线，敬请期待。</p>
+        <h1>A NEW ERA,<br /><em style={{ backgroundPosition: `${interpolate(loopFrame, [0, 149], [-80, 180])}% 50%` }}>COMING SOON.</em></h1>
+        <p>We are building the next generation of financial technology.<br />Launching soon. Stay tuned.</p>
         <div className="progress-row"><span>LAUNCH SEQUENCE</span><div className="progress-track"><span style={{ width: `${interpolate(loopFrame, [0, 149], [18, 88])}%` }} /></div><span>{Math.round(interpolate(loopFrame, [0, 149], [18, 88]))}%</span></div>
       </Interactive.Div>
 

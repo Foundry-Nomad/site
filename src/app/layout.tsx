@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Foundry Nomad — 即将上线",
-  description: "新一代金融科技体验正在启航。业务即将上线，敬请期待。",
+  title: "Foundry Nomad — Coming Soon",
+  description:
+    "We are building the next generation of financial technology. Launching soon.",
   icons: {
     icon: [{ url: "/logo_128.png", type: "image/png", sizes: "128x128" }],
     shortcut: "/logo_128.png",
@@ -28,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="zh-CN"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
