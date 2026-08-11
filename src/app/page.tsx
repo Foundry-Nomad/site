@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { Player, type PlayerRef } from "@remotion/player";
 import { LaunchFilm } from "@/remotion/LaunchFilm";
 
@@ -33,6 +34,11 @@ export default function Home() {
         acknowledgeRemotionLicense
         className="launch-player"
       />
+      <nav className="legal-links" aria-label="Legal">
+        <Link href="/terms">Terms</Link>
+        <span aria-hidden="true">·</span>
+        <Link href="/privacy">Privacy</Link>
+      </nav>
     </main>
   );
 }
