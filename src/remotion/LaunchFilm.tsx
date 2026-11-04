@@ -2,9 +2,7 @@ import {
   AbsoluteFill,
   Easing,
   Interactive,
-  Img,
   interpolate,
-  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -105,14 +103,6 @@ export const LaunchFilm = () => {
           filter="url(#glow)"
         />
       </svg>
-
-      <Interactive.Div name="Top navigation" className="topbar">
-        <div className="brand">
-          <Img name="Foundry Nomad logo" src={staticFile("logo.png")} className="brand-logo" />
-          <span>FOUNDRY NOMAD</span>
-        </div>
-        <div className="system-state"><span className="live-dot" /> SYSTEMS INITIALIZING</div>
-      </Interactive.Div>
 
       <Interactive.Div
         name="Launch message"

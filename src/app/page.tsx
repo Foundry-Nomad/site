@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { Player, type PlayerRef } from "@remotion/player";
 import { LaunchFilm } from "@/remotion/LaunchFilm";
+import { SiteHeader } from "./_components/site-header";
 
 export default function Home() {
   const playerRef = useRef<PlayerRef>(null);
@@ -22,6 +23,7 @@ export default function Home() {
 
   return (
     <main className="launch-page">
+      <SiteHeader />
       <Player
         ref={playerRef}
         component={LaunchFilm}

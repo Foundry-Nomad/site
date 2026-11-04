@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { SiteHeader } from "./site-header";
 
 type LegalSection = {
   title: string;
@@ -24,22 +24,7 @@ export function LegalDocument({
 }: LegalDocumentProps) {
   return (
     <main className="legal-page">
-      <header className="legal-header">
-        <Link href="/" className="legal-brand" aria-label="Foundry Nomad home">
-          <Image
-            src="/logo.png"
-            alt=""
-            width={44}
-            height={44}
-            priority
-            unoptimized
-          />
-          <span>FOUNDRY NOMAD</span>
-        </Link>
-        <Link href="/" className="legal-home-link">
-          Back to home <span aria-hidden="true">↗</span>
-        </Link>
-      </header>
+      <SiteHeader />
 
       <article className="legal-document">
         <div className="legal-intro">

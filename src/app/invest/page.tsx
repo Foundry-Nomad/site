@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { SiteHeader } from "../_components/site-header";
 import { Sparkline, TrendChart } from "./charts";
 import {
   availableShares,
@@ -131,15 +131,13 @@ export default function InvestPage() {
 
   return (
     <main className="qv-page">
-      <header className="qv-nav">
-        <Link className="qv-brand" href="/" aria-label="Foundry Nomad home">
-          <Image src="/logo.png" alt="" width={42} height={42} priority unoptimized />
-          <span>FOUNDRY NOMAD</span>
-        </Link>
-        <a className="qv-nav-cta" href={accessLink()}>
-          Request access
-        </a>
-      </header>
+      <SiteHeader
+        action={
+          <a className="qv-nav-cta" href={accessLink()}>
+            Request access
+          </a>
+        }
+      />
 
       <section className="qv-hero" aria-labelledby="qv-hero-heading">
         <div className="qv-hero-copy">

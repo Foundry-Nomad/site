@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SiteHeader } from "../_components/site-header";
 
 export const metadata: Metadata = {
   title: "Forward Deployed Engineering | Foundry Nomad",
@@ -13,15 +14,13 @@ const inquiryEmail = "inquiry@foundry-nomad.com";
 export default function FdePage() {
   return (
     <main className="fde-page">
-      <header className="fde-nav">
-        <Link className="fde-brand" href="/" aria-label="Foundry Nomad home">
-          <Image src="/logo.png" alt="" width={42} height={42} priority unoptimized />
-          <span>FOUNDRY NOMAD</span>
-        </Link>
-        <a className="fde-nav-contact" href={`mailto:${inquiryEmail}`}>
-          Email us
-        </a>
-      </header>
+      <SiteHeader
+        action={
+          <a className="fde-nav-contact" href={`mailto:${inquiryEmail}`}>
+            Email us
+          </a>
+        }
+      />
 
       <section className="fde-hero" aria-labelledby="fde-heading">
         <div className="fde-hero-copy">
